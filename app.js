@@ -36,20 +36,26 @@ const postEl = document.getElementById("post-el");
 const commentEl = document.getElementById("comment-el");
 const likesEl = document.getElementById("likes-el");
 
-const count = 1;
+ let count = 0;
 
 setInterval(() => {
+   
+    if (count === 3) {
+        count = 0;
+    }
     render();
+    count++;
+   
     
-    
+
 }, 3000);
 
-function render() {
-    nameEl.textContent = posts[count].name;
-    usernameEl.textContent = posts[count].username;
-    locationEl.textContent = posts[count].location;
-    avatarEl.src = posts[count].avatar;
-    postEl.src = posts[count].post;
-    commentEl.textContent = posts[count].comment;
-    likesEl.textContent = posts[count].likes;    
-}    
+  function render() {
+        nameEl.textContent = posts[count].name;
+        avatarEl.src = posts[count].avatar;
+        postEl.src = posts[count].post;
+        usernameEl.textContent = posts[count].username;
+        locationEl.textContent = posts[count].location;
+        commentEl.textContent = posts[count].comment;
+        likesEl.textContent = posts[count].likes;    
+    }    
