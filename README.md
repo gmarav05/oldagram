@@ -8,6 +8,10 @@ Built with simple HTML5, CSS3 and Vanilla JavaScript.
 
 ## Video
 
+https://github.com/user-attachments/assets/3b315f4b-7326-4080-973b-941b1257169b
+
+
+
 ## Image
 
 ![Oldagram on Google Nest](/images/image.png)
