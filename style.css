@@ -89,9 +89,13 @@ html, body {
     font-weight: 600;
 }
 
-.post-title span{
-    font-weight: 700;
+.user-name {
     margin-left: 15px;
+    font-weight: 700;
+}
+
+.post-title {
+    margin-left: 5px;
 }
 
 .icons:hover {
